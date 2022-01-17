@@ -1,48 +1,27 @@
 # Package 'chip'
 #To make drawing by R more easy!Printing Style!
 
-you can install it like this:
+#you can install it like this:
 
-rm(list = ls()) 
-
+rm(list = ls())
 if (is.element('chip', installed.packages()[,1]) == FALSE) 
 {
-
   if(is.element('devtools', installed.packages()[,1]) == FALSE)
-	
-	{	
-	
+  {	
     install.packages("devtools")	
-		
     library(devtools)
-		
   }
-	
-	else if(is.element('devtools', installed.packages()[,1]) == TRUE){
-	
+  else if(is.element('devtools', installed.packages()[,1]) == TRUE){
     library(devtools)
-		
   }
-	
   install_github("youngyaoguai/Rdraw/chip0.1/chip")
-	
   library(chip)
-	
-  help("chip")
-	
-}
+ } else if(is.element('chip', installed.packages()[,1]) == TRUE)
+    {
+    library(chip)
+   }
 
-else if(is.element('chip', installed.packages()[,1]) == TRUE)
-
-{
-
-  library(chip)
-	
-  help("chip")
-	
-}
-
-in 'chip' package,you can use eight function to draw your picture.you can get help like this:
+#in 'chip' package,you can use eight function to draw your picture.you can get help like this:
 
 help(acchist)
 
