@@ -1,0 +1,17 @@
+rm(list = ls())
+if (is.element('chip', installed.packages()[,1]) == FALSE) 
+{
+  if(is.element('devtools', installed.packages()[,1]) == FALSE)
+  {	
+    install.packages("devtools")	
+    library(devtools)
+  }
+  else if(is.element('devtools', installed.packages()[,1]) == TRUE){
+    library(devtools)
+  }
+  install_github("youngyaoguai/Rdraw/chip0.1/chip")
+  library(chip)
+ } else if(is.element('chip', installed.packages()[,1]) == TRUE)
+    {
+    library(chip)
+   }
