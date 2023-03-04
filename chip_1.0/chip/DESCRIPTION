@@ -1,0 +1,11 @@
+Package: chip
+Title: chip drawing
+Description: some drawing functions
+Version: 1.0
+Author: DU Yunhan <1270950448@qq.com>
+Depends: R (>= 3.0.2)
+License: MIT
+LazyData: FALSE
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2023-03-04 01:19:34 UTC; <e6><9d><9c><e4><ba><91><e6><99><97>
